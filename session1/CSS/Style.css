@@ -1,0 +1,9 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+header{
+    font-family:'Arial Narrow Bold'
+    color: rgb(89, 0, 255);
+}
