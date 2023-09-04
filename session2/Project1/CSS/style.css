@@ -53,12 +53,11 @@ body nav ul a{
 }
 
 body nav ul{
-    display: flex;
-    margin: 0px;
+   margin: 0px;
     padding: 10px;
     list-style-type: none;
-
 }
+
 body nav ul li a:hover{
     border-bottom:  2px solid rgb(61, 18, 18)
 
@@ -69,6 +68,6 @@ body footer{
     padding: 1px;
     height: 25px;
     text-align: center;
-    
+
 }
   
