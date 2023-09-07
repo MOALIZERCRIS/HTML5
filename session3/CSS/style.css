@@ -28,15 +28,12 @@ body{
 }
 .container header .logo{
     width: 25%;
-    height: 60px;
-    background-color: transparent;
-    content: url();
-    border: 2PX solid #fff;
     border-radius: 10px;
-
-
 }
 
+.container header .logo p{
+
+}
 .container header nav{
     width: 60%;
     height: 60px;
