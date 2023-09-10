@@ -36,12 +36,12 @@ body{
     padding: 30px 20px;
 
 }
+
 .container section form{
     width: 50%;
     min-height: 300px;
     padding: 20px;
     background-color: #273948;
-
 }
 
 .container section form input, label, textarea{
@@ -55,21 +55,20 @@ body{
 .container section form input{
     height: 35px;
     color: #46467a;
+    margin-bottom: 7px;
+    padding: 10px;
+    font-size: 17px;
 }
-
-
-
-.container  section form textarea{
-resize:none;
+.container form textarea{
+resize: none;
 color: #062743;
-margin-bottom:15px;
+margin-bottom: 15px;
 padding:10px;
 }
 
-
-
 .container section form input[type="submit"]{
-    background-color: red;
+    background-color: #b4040e;
     color: #eee;
-    cursor: pointer;text-transform: uppercase;
+    cursor: pointer;
+    text-transform: uppercase;
 }
