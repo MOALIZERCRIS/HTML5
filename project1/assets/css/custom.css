@@ -11,6 +11,11 @@ h3{
     font-size: 15px;
     color: #a0041e;
 }
+h5{
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 .navbar{
     background-color: #fff !important;
@@ -72,6 +77,12 @@ h3{
 
 .active{
     color: #a0041e !important;
+    
+}
+
+.boom{
+    font-weight: bold;
+    font-size:large;
 }
 
 .banner-padding{
@@ -101,6 +112,18 @@ h3{
     border-radius: 20px;
 }
 
+.bore.bus{
+background-color: pink;
+color: #ad0521;
+}
+.bore.des{
+    background-color: #5f9e5f;
+    color: green;
+}
+.bore.ind{
+    background-color: #a3bce7;
+    color: rgb(5, 5, 182);
+}
 .bgtry{
     min-height: 400px;
     margin-top: 70px;
@@ -121,6 +144,16 @@ h3{
 }
 .bgtry-content{
 color: #ffff;
+}
+.num{
+    color: #a0041e;
+    font-size: 50px;
+    font-weight:100px;
+}
+.rounded-circle{
+    height:20%;
+    width: 20%;
+    border: 2px #0a0a0a;
 }
 
 
