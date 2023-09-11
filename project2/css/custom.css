@@ -142,10 +142,16 @@
 
 .pricing .box{
     border: none;
+
     text-transform: uppercase;
     color: #eee;
     border: 1px solid #eee;
     width: 170px;
     padding: 10px;
+    z-index: 70%;
 }
-
+.pricing .cash{
+    color: #0de27d ;
+    font-size:xx-large;
+    font-weight: bolder;
+}
