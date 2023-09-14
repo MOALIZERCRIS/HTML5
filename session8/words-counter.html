@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Words Counter App</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Cover letter</h3>
+                <p>Please eter your cover letter in the space provided below, not exceeding 50 words</p>
+
+                <div class="form-group">
+
+                <textarea name="txtCoverLetter" id="txtCoverLetter" placeholder="Enter your cover letter here" class="input-control"></textarea>
+
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="input-control disabled" id="txtDisplay" disabled>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let textCoverLeter = document.getElementById("txtCoverLetter");
+        let textDisplay = document.getElementById("txtDisplay");
+
+        textCoverLeter.addEventListener("click", countWords);
+
+        function countWords(){
+            let CoverLetter = textCoverLeter.value;
+            // Sanitize users input by replacing multiple blank spaces with a space
+
+            CoverLetter = CoverLetter.replace(/\s+/g, " ");
+
+            // Break coverletter as a string into individual words using a space as a separator
+
+            let splittedWords = CoverLetter.split(" ");
+
+            // count the number of words splited
+
+            let numWords = splittedWords.length;
+            let remainingWords = 50 - numWords;
+
+            if(remainingWords < 50){
+                alert("You have exceeded the allowed number of words");
+
+            } else{
+                textDisplay.value = "You have " + remainingWords + " words remaining";
+            }
+            
+ }  
+
+        
+
+
+    </SCript>
+</body>
+</html>
